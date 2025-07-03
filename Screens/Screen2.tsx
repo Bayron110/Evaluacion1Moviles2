@@ -31,7 +31,6 @@ export default function Screen2() {
             <Text style={styles.title}>Lista de Productos</Text>
             <FlatList
                 data={datos}
-                keyExtractor={(item, index) => index.toString()}
                 renderItem={({ item }: { item: Product }) => (
                     <View style={styles.itemContainer}>
                         <TouchableOpacity onPress={() => {
